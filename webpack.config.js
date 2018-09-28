@@ -11,6 +11,9 @@ Encore
     .enableSourceMaps(!Encore.isProduction())
     .enableVersioning(Encore.isProduction())
 
+    .configureBabel(function (babelConfig) {
+        babelConfig.plugins = ["transform-class-properties", "transform-decorators-legacy"]
+    })
     .enableReactPreset()
 ;
 
