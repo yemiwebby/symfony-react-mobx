@@ -16,5 +16,4 @@ Encore
     })
     .enableReactPreset()
 ;
-
 module.exports = Encore.getWebpackConfig();
