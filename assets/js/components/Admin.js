@@ -1,10 +1,9 @@
 import React from 'react';
 import ReviewsBoard from './ReviewsBoard';
 import ReviewsList from './ReviewsList';
-import { observer, inject } from "mobx-react";
+import { inject } from "mobx-react";
 
 @inject("reviews")
-@observer
 class Admin extends React.Component {
     render() {
         return(
